@@ -40,15 +40,25 @@ h1 {
     font-weight: normal;
 }
 
-.colour {
-    width: 200px;
+#colour-picker {
+    margin-top: 20px;
+}
+
+.colours {
+    width: 160px;
     display: inline-block;
+}
+
+.colour {
+    width: 100px;
+    margin: 0 auto;
 }
 
 .colour-block {
     width: 20px;
     height: 20px;
-    display: inline-block;
+    float: left;
+    background: var(--colourleft);
 }
 
 #colour-one .colour-block {
