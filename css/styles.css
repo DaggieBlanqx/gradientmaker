@@ -1,8 +1,13 @@
 
+
+/*VARIABLES*/
+
 :root {
     --colourleft: #F1F2B5;
     --colourright: #135058;
 }
+
+/*CSS*/
 
 html {
     min-height: 100%;
@@ -15,6 +20,7 @@ body {
     min-height: 100%;
     padding: 0;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #title-bar {
@@ -24,5 +30,7 @@ body {
 
 h1 {
     margin: 0;
-    font-family: 'Caveat', cursive;
+    font-family: 'Codystar', cursive;
+    color: #000000;
+    font-weight: normal;
 }
