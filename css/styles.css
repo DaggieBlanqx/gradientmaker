@@ -1,11 +1,28 @@
 
+:root {
+    --colourleft: #F1F2B5;
+    --colourright: #135058;
+}
+
 html {
     min-height: 100%;
 }
 
 body {
-    background: #F1F2B5;  /* old browsers fallback */
-    background: -webkit-linear-gradient(to left, #135058, #F1F2B5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #135058, #F1F2B5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: var(--colourleft);  /* old browsers fallback */
+    background: -webkit-linear-gradient(to left, var(--colourright), var(--colourleft));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, var(--colourright), var(--colourleft));; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     min-height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#title-bar {
+    background: #ffffff;
+    padding: 5px;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Caveat', cursive;
 }
