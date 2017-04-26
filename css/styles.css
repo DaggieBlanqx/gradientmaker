@@ -23,9 +23,14 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-#title-bar {
-    background: #ffffff;
-    padding: 5px;
+#control-panel {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 10px;
+  background: #ffffff;
+  background: rgba(255,255,255,0.6);
+  text-align: center;
 }
 
 h1 {
@@ -33,4 +38,23 @@ h1 {
     font-family: 'Codystar', cursive;
     color: #000000;
     font-weight: normal;
+}
+
+.colour {
+    width: 200px;
+    display: inline-block;
+}
+
+.colour-block {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+#colour-one .colour-block {
+    background: var(--colourleft);
+}
+
+#colour-two .colour-block {
+    background: var(--colourright);
 }
