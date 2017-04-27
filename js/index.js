@@ -2,8 +2,9 @@
 // get the colour inputs
 var colourInputs = document.querySelectorAll('#colour-picker input');
 
+// function for when colour input changes
 function updateColour() {
-    console.log(this.name);
+    document.documentElement.style.setProperty('--' + this.name, this.value);
 }
 
 // run function on colour change
