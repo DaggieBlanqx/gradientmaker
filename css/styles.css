@@ -49,6 +49,13 @@ h1 {
     display: inline-block;
 }
 
+.colours input {
+    background: transparent;
+    border: transparent;
+    font-size: 15px;
+    width: 70px;
+}
+
 .colour {
     width: 100px;
     margin: 0 auto;
