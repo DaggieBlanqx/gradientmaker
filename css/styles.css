@@ -112,12 +112,21 @@ h1 {
     padding: 5px;
     background-color: #1d1d1d;
     color: #ffffff;
-    font-size: 13px;
+    font-size: 14px;
     font-family: 'Source Code Pro', monospace;
+    white-space:nowrap;
 }
 
-.code div {
-    width: 1000px;
+.code .property {
+    color: #F1C40F;
+}
+
+.code .value {
+    color: #1ABC9C;
+}
+
+.code .comment {
+    color: #BDC3C7;
 }
 
 /* Tooltip container */
