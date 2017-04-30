@@ -95,6 +95,30 @@ h1 {
     background: #ffffff;
 }
 
+#code-panel {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 10px;
+  background: #ffffff;
+  background: rgba(255,255,255,0.6);
+}
+
+.code {
+    width: 320px;
+    height: 100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 5px;
+    background-color: #1d1d1d;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.code div {
+    width: 1000px;
+}
+
 /* Tooltip container */
 .tooltip {
     position: relative;
