@@ -27,3 +27,14 @@ document.getElementById("btn-rotate").onclick = function() {
     }
     document.documentElement.style.setProperty('--direction', newDirection); //update the css variables
 };
+
+// code buttons
+document.getElementById("btn-code-show").onclick = function() {
+    document.getElementById("control-panel").classList.add("hidden");
+    document.getElementById("code-panel").classList.remove("hidden");
+};
+
+document.getElementById("btn-code-hide").onclick = function() {
+    document.getElementById("control-panel").classList.remove("hidden");
+    document.getElementById("code-panel").classList.add("hidden");
+};

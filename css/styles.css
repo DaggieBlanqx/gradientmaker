@@ -24,12 +24,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/*Hiding Panels*/
-
-.hidden {
-    display: none;
-}
-
 #control-panel {
   margin-top: 100px;
   margin-left: auto;
@@ -136,6 +130,12 @@ h1 {
 
 .code .comment {
     color: #BDC3C7;
+}
+
+/*Hiding Panels*/
+
+.hidden {
+    display: none;
 }
 
 /* Tooltip container */
