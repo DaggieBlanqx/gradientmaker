@@ -28,10 +28,23 @@ document.getElementById("btn-rotate").onclick = function() {
     document.documentElement.style.setProperty('--direction', newDirection); //update the css variables
 };
 
+// function to update text
+var updateText = function(text) {
+    this.textContent = text;
+};
+
 // code buttons
 document.getElementById("btn-code-show").onclick = function() {
+    // show code block
     document.getElementById("control-panel").classList.add("hidden");
     document.getElementById("code-panel").classList.remove("hidden");
+    // update code text values
+    var direction = document.documentElement.style.getPropertyValue('--direction') || "left"; // defaults to left
+    var colourLeft = document.documentElement.style.getPropertyValue('--colourleft') || "#764ba2";
+    var colourRight = document.documentElement.style.getPropertyValue('--colourright') || "#667eea";
+    document.getElementsByClassName("direction-text").forEach(updateText(direction));
+    document.getElementsByClassName("colourleft-text").textContent = colourLeft;
+    document.getElementsByClassName("colourright-text").textContent = colourRight;
 };
 
 document.getElementById("btn-code-hide").onclick = function() {
