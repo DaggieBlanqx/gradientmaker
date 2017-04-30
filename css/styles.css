@@ -97,6 +97,10 @@ h1 {
     background: #ffffff;
 }
 
+.btn:focus {
+    outline: none;
+}
+
 /*Code Display*/
 
 #code-panel {
