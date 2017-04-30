@@ -79,6 +79,18 @@ h1 {
     background: var(--colourright);
 }
 
+.btn {
+    color: #1d1d1d;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    width: 40px;
+}
+
+.btn:hover {
+    background: #ffffff;
+}
+
 /* Tooltip container */
 .tooltip {
     position: relative;
@@ -94,19 +106,35 @@ h1 {
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
- 
-    /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
 }
 
-.tooltip .tooltiptext .bottom {
-    top: 100%;
+/* Tooltip bottom */
+.tooltip .tooltiptext.bottom {
+    top: 120%;
     left: 50%; 
     margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
 }
 
+.tooltip .tooltiptext.bottom::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
 /* Show the tooltip text when you mouse over the tooltip container */
+.tooltip .tooltiptext {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
 .tooltip:hover .tooltiptext {
     visibility: visible;
+    opacity: 1;
 }
