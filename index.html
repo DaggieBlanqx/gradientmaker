@@ -33,11 +33,21 @@
         </div>
     </div>
     
-    <div id="code-panel">
+    <div id="code-panel" class="hidden">
         <div class="code">
             <div><span class="property">background</span>: <span class="value colourleft">#F1F2B5</span>;  <span class="comment">/* fallback for old browsers */</span></div>
             <div><span class="property">background</span>: -webkit-linear-gradient(to <span class="direction">left<span>, <span class="value colourright">#135058</span>, <span class="value colourleft">#F1F2B5</span>);  <span class="comment">/* Chrome 10-25, Safari 5.1-6 */</span></div>
             <div><span class="property">background</span>: linear-gradient(to <span class="direction">left<span>, <span class="value colourright">#135058</span>, <span class="value colourleft">#F1F2B5</span>); <span class="comment">/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */</span></div>
+        </div>
+        <div id="buttons">
+            <a id="btn-rotate" class="btn tooltip" href="#" aria-label="Copy">
+              <i class="fa fa-paperclip" aria-hidden="true"></i>
+              <span class="tooltiptext bottom">Copy Code</span>
+            </a>
+            <a class="btn tooltip" href="#" aria-label="Close">
+              <i class="fa fa-times" aria-hidden="true"></i>
+              <span class="tooltiptext bottom">Close Code</span>
+            </a>
         </div>
     </div>
 
