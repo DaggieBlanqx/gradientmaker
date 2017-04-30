@@ -113,6 +113,7 @@ h1 {
     background-color: #1d1d1d;
     color: #ffffff;
     font-size: 13px;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .code div {
