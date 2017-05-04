@@ -12,4 +12,4 @@ A simple gradient maker and creator.
 
 Pick your colours and grab your code. Oooooo look how pretty they look!
 
-View at: 
+View at: https://codemzy.github.io/gradientmaker
