@@ -61,6 +61,10 @@ document.getElementById("btn-code-hide").onclick = function() {
 
 // copy code
 document.getElementById("btn-code-copy").onclick = function() {
+    // function to display message
+    function codeCopyMessage(message) {
+        document.getElementById("copy-msg").textContent = message;
+    }
     // select code text
     var copyCodeArea = document.querySelector(".code");
     window.getSelection().selectAllChildren(copyCodeArea);
@@ -70,9 +74,9 @@ document.getElementById("btn-code-copy").onclick = function() {
         if (!copied) {
             throw 'Unable to copy';
         } else {
-            console.log('Yes! CSS is copied, paste away!');
+            codeCopyMessage('Yes! CSS is copied, paste away!');
         }
     } catch (err) {
-        console.log('Oops, unable to copy, use right click + copy');
+        codeCopyMessage('Oops, unable to copy, use right click + copy');
     }
 };
