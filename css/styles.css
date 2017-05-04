@@ -230,3 +230,18 @@ h1 {
     background: rgba(255,255,255,0.3);
     outline: none;
 }
+
+@media only screen and (max-width: 992px) 
+{
+    
+  
+    .panel {
+        margin-top: 50px;
+        padding: 25px 10px 10px 10px;
+    }
+  
+    h1 {
+        font-size: 30px;
+    }
+  
+}
