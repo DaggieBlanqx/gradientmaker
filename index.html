@@ -11,7 +11,7 @@
 </head>
 <body>
     
-    <div id="control-panel">
+    <div id="control-panel" class="panel">
         <h1>Gradient Maker</h1>
         <div id="colour-picker">
             <div id="colour-one" class="colours"><div class="colour"><span class="colour-block"></span><input type="color" name="colourleft" value="#764ba2" /></div></div>
@@ -33,7 +33,7 @@
         </div>
     </div>
     
-    <div id="code-panel" class="hidden">
+    <div id="code-panel" class="panel hidden">
         <div class="code">
             <div><span class="property">background</span>: <span class="value colourleft-text">#764ba2</span>;  <span class="comment">/* fallback for old browsers */</span></div>
             <div><span class="property">background</span>: -webkit-linear-gradient(to <span class="direction-text">left</span>, <span class="value colourright-text">#667eea</span>, <span class="value colourleft-text">#764ba2</span>);  <span class="comment">/* Chrome 10-25, Safari 5.1-6 */</span></div>
@@ -52,6 +52,19 @@
         </div>
     </div>
 
+    <div id="footer-panel">
+      <a class="footer-btn" role="button"><i class="fa fa-2x fa-fw fa-twitter"></i>
+      </a><a class="footer-btn" role="button"><i class="fa fa-2x fa-fw fa-facebook"></i>
+      </a><a class="footer-btn" role="button"><i class="fa fa-2x fa-fw fa-github"></i>
+      </a>
+      <!--<a id="btn-github" class="btn" role="button"><i class="fa fa-github" aria-hidden="true"></i></a>-->
+      <!--<div><i class="fa fa-copyright"></i> by codemzy</div>-->
+      <!--<div>-->
+      <!--      <a id="btn-code-hide" class="btn" role="button"><i class="fa fa-github" aria-hidden="true"></i></a>-->
+      <!--      <i class="fa fa-twitter-square" aria-hidden="true"></i>-->
+      <!--      <i class="fa fa-facebook-square" aria-hidden="true"></i>-->
+      <!--</div>-->
+    </div>
     
     
     <!--SCRIPTS-->
