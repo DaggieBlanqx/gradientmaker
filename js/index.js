@@ -30,9 +30,13 @@ document.getElementById("btn-rotate").onclick = function() {
 
 // function to update text
 var updateText = function(className, text) {
-    Array.prototype.forEach.call(document.querySelectorAll(className), function (item) {
-        item.textContent = text;
-    });
+    try { // for modern browsers
+        document.querySelectorAll(className).forEach(function(item) { item.textContent = text; });
+    } catch(e) { // for internet explorer
+        Array.prototype.forEach.call(document.querySelectorAll(className), function (item) {
+            item.textContent = text;
+        }); 
+    }
 };
 
 // code buttons
@@ -44,14 +48,9 @@ document.getElementById("btn-code-show").onclick = function() {
     var direction = document.documentElement.style.getPropertyValue('--direction') || "left"; // defaults to left
     var colourLeft = document.documentElement.style.getPropertyValue('--colourleft') || "#764ba2";
     var colourRight = document.documentElement.style.getPropertyValue('--colourright') || "#667eea";
-    console.log(direction);
     updateText(".direction-text", direction);
-    // document.querySelectorAll(".direction-text").forEach(function(item) { item.textContent = direction; });
-    // Array.prototype.forEach.call(document.querySelectorAll(".direction-text"), function (item) {
-    //     item.textContent = direction;
-    // });
-    document.getElementsByClassName("colourleft-text").textContent = colourLeft;
-    document.getElementsByClassName("colourright-text").textContent = colourRight;
+    updateText(".colourleft-text", colourLeft);
+    updateText(".colourright-text", colourRight);
 };
 
 document.getElementById("btn-code-hide").onclick = function() {
