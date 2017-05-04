@@ -53,7 +53,22 @@ document.getElementById("btn-code-show").onclick = function() {
     updateText(".colourright-text", colourRight);
 };
 
+// hide code block
 document.getElementById("btn-code-hide").onclick = function() {
     document.getElementById("control-panel").classList.remove("hidden");
     document.getElementById("code-panel").classList.add("hidden");
+};
+
+// copy code
+document.getElementById("btn-code-copy").onclick = function() {
+    var copyCodeArea = document.querySelector(".code");
+    window.getSelection().selectAllChildren(copyCodeArea);
+
+//   try {
+//     var successful = document.execCommand('copy');
+//     var msg = successful ? 'successful' : 'unsuccessful';
+//     console.log('Copying text command was ' + msg);
+//   } catch (err) {
+//     console.log('Oops, unable to copy');
+//   }
 };
