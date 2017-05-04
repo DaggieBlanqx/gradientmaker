@@ -12,6 +12,13 @@ colourInputs.forEach(function(input) {
     input.addEventListener('change', updateColour);
 });
 
+// active colour input if colour block clicked
+Array.prototype.forEach.call(document.querySelectorAll(".colour-block"), function (element) {
+    element.addEventListener('click', function(item) {
+        document.querySelector("#" + item.srcElement.dataset.id + " input").click();
+    });
+}); 
+
 // rotate button
 document.getElementById("btn-rotate").onclick = function() {
     var directions = {
