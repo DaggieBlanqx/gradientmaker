@@ -193,6 +193,7 @@ h1 {
 
 #footer-panel {
     text-align: right;
+    margin-bottom: 50px;
 }
 
 .footer-tab {
@@ -205,7 +206,7 @@ h1 {
     float: left;
     font-size: 12px;
     padding-top: 7px;
-    padding-bottom: 7px;
+    padding-bottom: 8px;
 }
 
 .codemzy a:hover {
