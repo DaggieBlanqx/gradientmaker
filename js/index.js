@@ -61,14 +61,18 @@ document.getElementById("btn-code-hide").onclick = function() {
 
 // copy code
 document.getElementById("btn-code-copy").onclick = function() {
+    // select code text
     var copyCodeArea = document.querySelector(".code");
     window.getSelection().selectAllChildren(copyCodeArea);
-
-//   try {
-//     var successful = document.execCommand('copy');
-//     var msg = successful ? 'successful' : 'unsuccessful';
-//     console.log('Copying text command was ' + msg);
-//   } catch (err) {
-//     console.log('Oops, unable to copy');
-//   }
+    // try to copy to clipboard
+    try {
+        var copied = document.execCommand('copy');
+        if (!copied) {
+            throw 'Unable to copy';
+        } else {
+            console.log('Yes! CSS is copied, paste away!');
+        }
+    } catch (err) {
+        console.log('Oops, unable to copy, use right click + copy');
+    }
 };
