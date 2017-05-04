@@ -102,6 +102,12 @@ document.getElementById("btn-random").onclick = function() {
         };
         return "#" + colourObj[getRandom()] + colourObj[getRandom()] + colourObj[getRandom()] + colourObj[getRandom()] + colourObj[getRandom()] + colourObj[getRandom()];
     }
-    document.documentElement.style.setProperty('--colourleft', getColour()); // random left colour
-    document.documentElement.style.setProperty('--colourright', getColour()); // random right colour
+    // new left colour
+    var newLeft = getColour(); // random left colour
+    document.querySelector('#colour-one input').value = newLeft; // update input value
+    document.documentElement.style.setProperty('--colourleft', newLeft); // update css variable
+    // new right colour
+    var newRight = getColour(); // random left colour
+    document.querySelector('#colour-two input').value = newRight; // update input value
+    document.documentElement.style.setProperty('--colourright', newRight); // update css variable
 };
