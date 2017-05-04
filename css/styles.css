@@ -195,12 +195,26 @@ h1 {
     text-align: right;
 }
 
-.footer-btn {
-    display: inline-block;
-    text-align: center;
+.footer-tab {
     background: #ffffff;
     background: rgba(255,255,255,0.4);
     padding: 5px 15px;
+}
+
+.codemzy {
+    float: left;
+    font-size: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.codemzy a:hover {
+    color: #00bcd4;
+    color: var(--colourright);
+}
+
+.footer-btn {
+    display: inline-block;
     margin-left: 1px;
     cursor: pointer;
 }
