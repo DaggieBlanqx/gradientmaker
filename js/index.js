@@ -29,8 +29,10 @@ document.getElementById("btn-rotate").onclick = function() {
 };
 
 // function to update text
-var updateText = function(text) {
-    this.textContent = text;
+var updateText = function(className, text) {
+    Array.prototype.forEach.call(document.querySelectorAll(className), function (item) {
+        item.textContent = text;
+    });
 };
 
 // code buttons
@@ -42,7 +44,12 @@ document.getElementById("btn-code-show").onclick = function() {
     var direction = document.documentElement.style.getPropertyValue('--direction') || "left"; // defaults to left
     var colourLeft = document.documentElement.style.getPropertyValue('--colourleft') || "#764ba2";
     var colourRight = document.documentElement.style.getPropertyValue('--colourright') || "#667eea";
-    document.getElementsByClassName("direction-text").forEach(updateText(direction));
+    console.log(direction);
+    updateText(".direction-text", direction);
+    // document.querySelectorAll(".direction-text").forEach(function(item) { item.textContent = direction; });
+    // Array.prototype.forEach.call(document.querySelectorAll(".direction-text"), function (item) {
+    //     item.textContent = direction;
+    // });
     document.getElementsByClassName("colourleft-text").textContent = colourLeft;
     document.getElementsByClassName("colourright-text").textContent = colourRight;
 };
