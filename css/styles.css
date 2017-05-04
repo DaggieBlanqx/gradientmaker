@@ -22,7 +22,13 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    color: #1d1d1d;
 }
+
+a, a:hover, a:focus {
+    color: #1d1d1d;
+}
+
 
 .panel {
   margin-top: 100px;
@@ -199,8 +205,13 @@ h1 {
     cursor: pointer;
 }
 
-.footer-btn:hover, .footer-btn:focus {
-    background: #ffffff;
+.footer-btn:hover {
+    background: #eceff1;
     background: rgba(255,255,255,0.7);
+}
+
+.footer-btn:focus {
+    background: #ffffff;
+    background: rgba(255,255,255,0.4);
     outline: none;
 }
