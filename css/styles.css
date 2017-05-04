@@ -197,7 +197,7 @@ h1 {
 
 .footer-tab {
     background: #ffffff;
-    background: rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.3);
     padding: 5px 15px;
 }
 
@@ -226,6 +226,6 @@ h1 {
 
 .footer-btn:focus {
     background: #ffffff;
-    background: rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.3);
     outline: none;
 }
