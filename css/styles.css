@@ -39,6 +39,7 @@ h1 {
     font-family: 'Codystar', cursive;
     color: #000000;
     font-weight: normal;
+    font-size: 40px;
 }
 
 #colour-picker {
@@ -114,7 +115,7 @@ h1 {
 
 .code {
     width: 320px;
-    height: 100px;
+    height: 92px;
     margin: 0 auto;
     overflow: auto;
     padding: 5px;
