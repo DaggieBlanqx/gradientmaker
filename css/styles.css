@@ -16,6 +16,9 @@ html {
 
 body {
     background: var(--colourleft);  /* old browsers fallback */
+    background: -webkit-gradient(to var(--direction), var(--colourright), var(--colourleft));
+    background: -o-linear-gradient(to var(--direction), var(--colourright), var(--colourleft));
+    background: -moz-linear-gradient(to var(--direction), var(--colourright), var(--colourleft));
     background: -webkit-linear-gradient(to var(--direction), var(--colourright), var(--colourleft));  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to var(--direction), var(--colourright), var(--colourleft));; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     min-height: 100%;
