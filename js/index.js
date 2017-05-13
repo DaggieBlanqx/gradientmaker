@@ -20,10 +20,7 @@ Array.prototype.forEach.call(document.querySelectorAll(".colour-block"), functio
 }); 
 
 // rotate button
-var rotate = document.getElementById("btn-rotate");
-rotate.onclick = doRotate;
-rotate.touchstart = doRotate;
-// rotate function
+document.getElementById("btn-rotate").onclick = doRotate;
 function doRotate() {
     var directions = {
         "top": "right",
@@ -66,13 +63,15 @@ function showCode() {
 }
 
 // hide code block
-document.getElementById("btn-code-hide").onclick = function() {
+document.getElementById("btn-code-hide").onclick = hideCode;
+function hideCode() {
     document.getElementById("control-panel").classList.remove("hidden");
     document.getElementById("code-panel").classList.add("hidden");
-};
+}
 
 // copy code
-document.getElementById("btn-code-copy").onclick = function() {
+document.getElementById("btn-code-copy").onclick = copyCode;
+function copyCode() {
     // function to display message
     function codeCopyMessage(message) {
         document.getElementById("copy-msg").textContent = message;
@@ -94,10 +93,11 @@ document.getElementById("btn-code-copy").onclick = function() {
     } catch (err) {
         codeCopyMessage('/* CSS selected, use right click + copy */');
     }
-};
+}
 
 // random colours
-document.getElementById("btn-random").onclick = function() {
+document.getElementById("btn-random").onclick = doRandom;
+function doRandom() {
     function getRandom() { // random num
         return Math.floor((Math.random()*16)); // random number 0-15
     }
@@ -115,4 +115,4 @@ document.getElementById("btn-random").onclick = function() {
     var newRight = getColour(); // random left colour
     document.querySelector('#colour-two input').value = newRight; // update input value
     document.documentElement.style.setProperty('--colourright', newRight); // update css variable
-};
+}

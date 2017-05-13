@@ -19,15 +19,15 @@
             <div id="colour-two" class="colours"><div class="colour"><span class="colour-block" data-id="colour-two"></span><input type="color" name="colourright" value="#667eea" /></div></div>
         </div>
         <div id="buttons">
-            <button id="btn-rotate" class="btn tooltip" tabindex="0" aria-label="Rotate">
+            <a id="btn-rotate" class="btn tooltip" onclick="doRotate()" role="button" tabindex="0" aria-label="Rotate">
               <i class="fa fa-lg fa-repeat" aria-hidden="true"></i>
               <span class="tooltiptext bottom">Rotate</span>
-            </button>
+            </a>
             <a id="btn-code-show" class="btn tooltip" onclick="showCode()" role="button" tabindex="0" aria-label="Code">
               <i class="fa fa-lg fa-code" aria-hidden="true"></i>
               <span class="tooltiptext bottom">Get CSS</span>
             </a>
-            <a id="btn-random" class="btn tooltip" role="button" tabindex="0" aria-label="Random">
+            <a id="btn-random" class="btn tooltip" onclick="doRandom()" role="button" tabindex="0" aria-label="Random">
               <i class="fa fa-lg fa-random" aria-hidden="true"></i>
               <span class="tooltiptext bottom">Random</span>
             </a>
@@ -42,11 +42,11 @@
             <div><span id="copy-msg" class="comment"></span></div>
         </div>
         <div id="buttons">
-            <a id="btn-code-copy" class="btn tooltip" role="button" tabindex="0" aria-label="Copy">
+            <a id="btn-code-copy" class="btn tooltip" onclick="copyCode()" role="button" tabindex="0" aria-label="Copy">
               <i class="fa fa-lg fa-paperclip" aria-hidden="true"></i>
               <span class="tooltiptext bottom">Copy Code</span>
             </a>
-            <a id="btn-code-hide" class="btn tooltip" role="button" tabindex="0" aria-label="Close">
+            <a id="btn-code-hide" class="btn tooltip" onclick="hideCode()" role="button" tabindex="0" aria-label="Close">
               <i class="fa fa-lg fa-times" aria-hidden="true"></i>
               <span class="tooltiptext bottom">Close Code</span>
             </a>
