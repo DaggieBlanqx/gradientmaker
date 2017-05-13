@@ -20,7 +20,11 @@ Array.prototype.forEach.call(document.querySelectorAll(".colour-block"), functio
 }); 
 
 // rotate button
-document.getElementById("btn-rotate").onclick = function() {
+var rotate = document.getElementById("btn-rotate");
+rotate.onclick = doRotate;
+rotate.touchstart = doRotate;
+// rotate function
+function doRotate() {
     var directions = {
         "top": "right",
         "right": "bottom",
@@ -33,7 +37,7 @@ document.getElementById("btn-rotate").onclick = function() {
         newDirection = directions[direction]; // get the key from the directions object to get the new value
     }
     document.documentElement.style.setProperty('--direction', newDirection); //update the css variables
-};
+}
 
 // function to update text
 var updateText = function(className, text) {
@@ -47,7 +51,8 @@ var updateText = function(className, text) {
 };
 
 // code buttons
-document.getElementById("btn-code-show").onclick = function() {
+document.getElementById("btn-code-show").onclick = showCode;
+function showCode() {
     // show code block
     document.getElementById("control-panel").classList.add("hidden");
     document.getElementById("code-panel").classList.remove("hidden");
@@ -58,7 +63,7 @@ document.getElementById("btn-code-show").onclick = function() {
     updateText(".direction-text", direction);
     updateText(".colourleft-text", colourLeft);
     updateText(".colourright-text", colourRight);
-};
+}
 
 // hide code block
 document.getElementById("btn-code-hide").onclick = function() {
